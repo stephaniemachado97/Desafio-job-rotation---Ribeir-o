@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+</head>
+<body>
+    <script>
+
+        //desafio soma
+        var indice = 13
+        var k = 0
+        var soma = 0
+
+        while (k < indice) {
+            k++
+            soma = soma + k
+        }
+
+        console.log(soma)
+
+        //desafio fibonacci
+        var fibonacci = [];
+        fibonacci[0] = 0;
+        fibonacci[1] = 1;
+        for (var i = 2; i < 30; i++) {
+        fibonacci[i] = fibonacci[i - 2] + fibonacci[i - 1];
+        }
+        console.log(fibonacci);
+ 
+        //desafio inverter palavra sem usar funções prontas
+        function inverter(string){
+            var saida = ''
+            for(var i = string.length - 1; i >= 0; i--){
+                saida+=string[i]
+            }
+            console.log(saida)
+        }
+        inverter("desafio")
+
+
+    </script>
+</body>
+</html>
